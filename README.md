@@ -51,20 +51,21 @@ _________
 # Methodology
 _______
 ## Data Cleaning:
-- Initial Dataset: The dataset initially contained 9,995 rows and 20 columns.
+- Initial Dataset: The dataset initially contained 9,995 rows and 21 columns.
+  ![Screenshot (92)](https://github.com/user-attachments/assets/06bc4e55-aa82-4354-b264-a2d1eee370a8)
 - Duplicate Check: No duplicate rows were found, ensuring the dataset’s integrity for accurate analysis.
 - Missing Values: A thorough check revealed that no missing values were in any of the columns, reinforcing the dataset's reliability.
 - Column Removal: Certain columns were removed to focus on essential data for sales revenue analysis:
-Customer Name: Removed as Customer ID suffices for unique identification.
-Ship Date: Excluded since it is relevant to delivery insights but not critical for sales revenue analysis.
-Order ID: Omitted because transaction identification is not essential to the revenue focus.
-Ship Mode: Excluded as it does not directly impact the analysis of product revenue.
-Country: Removed since all sales are within the United States.
-Product Name: Omitted as the Product ID is sufficient for identification purposes.
-Postal Code: Removed to streamline the dataset further, as it does not contribute directly to sales revenue analysis.
-Row ID: Removed because it provides a unique identifier but is not essential for analysis.
-City: Removed, as it is typically not essential for a broad sales analysis unless specific city-level trends are analyzed.
-State: Removed for the same reason as City; it may not be critical for overall sales analysis.
+1. Customer Name: Removed as Customer ID suffices for unique identification.
+2. Ship Date: Excluded since it is relevant to delivery insights but not critical for sales revenue analysis.
+3. Order ID: Omitted because transaction identification is not essential to the revenue focus.
+4. Ship Mode: Excluded as it does not directly impact the analysis of product revenue.
+5. Country: Removed since all sales are within the United States.
+6. Product Name: Omitted as the Product ID is sufficient for identification purposes.
+7. Postal Code: Removed to streamline the dataset further, as it does not contribute directly to sales revenue analysis.
+8. Row ID: Removed because it provides a unique identifier but is not essential for analysis.
+9. City: Removed, as it is typically not essential for a broad sales analysis unless specific city-level trends are analyzed.
+10. State: Removed for the same reason as City; it may not be critical for overall sales analysis.
 -New Column Additions:
 1. Profit Margin:
    
@@ -96,8 +97,8 @@ Maximum Discount: 0.7 - 0.8)
 ```Excel
 =IFS([@Discount]=0,"No Discount",[@Discount]<0.1,"Low discount",[@Discount]<0.2,"Moderate Discount",[@Discount]<0.3,"Discounted",[@Discount]<0.4,"Significant Discount",[@Discount]<0.5,"High Discount",[@Discount]<0.6,"Very High Discount",[@Discount]<0.7,"Extreme Discount",[@Discount]<=0.8,"Maximum Discount")
 ```
-
-- Final Dataset: After cleaning, the dataset retained 9,995 rows and 20 columns, containing only the most relevant fields for a focused analysis of sales revenue.
+- Final Dataset: After cleaning, the dataset retained 9,995 rows and 14 columns, containing only the most relevant fields for a focused analysis of sales revenue.
+  ![Screenshot (94)](https://github.com/user-attachments/assets/08e21d41-e4f5-41f4-9c97-0d01888e7a76)
 ___________
 ## Exploratory Data Analysis (EDA):
 - Total Sales
@@ -125,7 +126,9 @@ ___________
 - Profit Insights: The Copiers sub-category yields the highest profit, indicating a strong profitability potential despite lower sales volume compared to phones
   _________
   # Results
-  ___________
+![Top 10 Sub-Category by Profit](https://github.com/user-attachments/assets/d0613fc3-2be3-4a8f-9427-e83801dade85)
+![Top 10 Sub-Category by Total Sales](https://github.com/user-attachments/assets/1d6a14df-2d2d-41d3-b1c1-c8537d42952c)
+ ___________
 #### Customer Segment 
 - Assess sales and profitability across customer segments to identify high-value markets for strategic marketing focus.
    ## Approach
@@ -138,6 +141,8 @@ ___________
 - Profit Insights: The Consumer segment also leads in total profit, but the Corporate segment has a noteworthy profit margin relative to its sales volume, indicating potential for targeted marketing.
   _________
   # Results
+  ![Profit by Segment](https://github.com/user-attachments/assets/1e371800-a2fd-4bf9-886a-58a28d68d254)
+![Total Sales by Segment](https://github.com/user-attachments/assets/3366e8b6-8a02-4c38-92e7-241149f9be99)
   ___________
 #### Region Performance:
 - Assess sales and profitability across regions to identify high-value markets for strategic marketing focus.
@@ -149,6 +154,9 @@ ___________
 - Profit Insights: The West region also has the highest profit at $108,285.86, while the East region follows with $91,522.78, suggesting effective cost management and higher margins in these regions
   _________
   # Results
+  ![Profit by Region](https://github.com/user-attachments/assets/06167836-5942-4576-a2f7-43891b4b3c37)
+![Total Sales by Region](https://github.com/user-attachments/assets/112ef417-0ff5-44ac-9759-e91c97218951)
+
   ___________
 #### Sales Trend Analysis:
 - Analyze seasonal sales trends to time marketing efforts effectively, maximizing impact during peak sales periods.
@@ -160,6 +168,8 @@ ___________
 - Profit Trends: Profit also showed a substantial upward trajectory, rising from $3,811.23 in Q1 2014 to $27,448.73 in Q4 2017, reflecting improved operational efficiency and profitability.
   _________
   # Results
+  ![Sales and Profit Trend Overtime](https://github.com/user-attachments/assets/11300e69-ab28-407d-8171-cd106bc75fc5)
+![Screenshot (95)](https://github.com/user-attachments/assets/dbba7f1b-a49b-404f-9a3c-c713b6596025)
   ___________
 #### Impact of Discounts on Profitability:
 - Explore how discount rates affect overall sales and profit. This will inform pricing and promotional strategies.
@@ -175,6 +185,8 @@ ___________
 - The "Discounted" range achieved a significant sales volume of 13,657 units but still resulted in a profit of $90,204.71, demonstrating that strategic discounting can drive volume while maintaining profitability.
   _________
   # Results
+![Screenshot (96)](https://github.com/user-attachments/assets/f7fbe78f-08a0-4a14-bc90-e2bf36c04d2a)
+  ![Impact of Discount Levels on Profitability and Sales](https://github.com/user-attachments/assets/e18a77e1-b298-451c-b7fe-7e33e5e583de)
   ___________
 ## Findings Summary
 After performing the analyses, the following key insights have emerged to keep us informed and aligned:
