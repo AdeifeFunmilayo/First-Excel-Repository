@@ -200,6 +200,8 @@ After performing the analyses, the following key insights have emerged to keep u
 - Sales Volume Insights: The Discounted range recorded substantial sales (13,657 units) with a profit of $90,204.71, highlighting the potential benefits of strategic discounting to drive volume while managing profit margins.
 __________
 ## Visualization
+![Screenshot (99)](https://github.com/user-attachments/assets/5c57c499-0d99-4d05-8f97-6a34c1505198)
+![Screenshot (98)](https://github.com/user-attachments/assets/e8ccdcf0-07ee-4ed4-b19c-07b573e83720)
 ____________
 # Discussion
 ___________
